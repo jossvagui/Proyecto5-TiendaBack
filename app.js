@@ -60,6 +60,6 @@ const PORT = process.env.PORT || 4000
 
 app.use("/api", usuarios);
 app.listen(PORT, function () {
-  console.log("Node server running on http://localhost:4000");
+  console.log("Node server running on http://localhost:", PORT);
 });
 
