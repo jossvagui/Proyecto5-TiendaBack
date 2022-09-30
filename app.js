@@ -28,14 +28,6 @@ app.get('/', function (req, res) {
   res.send('Backend funcionando correctamente')
 })
 
-app.get('/usuarios', async (req, res) => {
-  const usuario = await usuarioCtrl.findAllUsers();
-  res.send(usuario);
-})
-
-app.post('/usuarios', async (req, res) => {
-  const body = req.body;
-
 
 usuarios.get('/usuarios', async (req, res) => {
   const usuario = await usuarioCtrl.findAllUsers();
