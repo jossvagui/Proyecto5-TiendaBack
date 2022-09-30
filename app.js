@@ -56,8 +56,10 @@ usuarios.post('/usuarios', async (req, res) => {
   }
 })
 
+const PORT = process.env.PORT || 4000
+
 app.use("/api", usuarios);
-app.listen(4000, function () {
+app.listen(PORT, function () {
   console.log("Node server running on http://localhost:4000");
 });
 
