@@ -24,7 +24,7 @@ var usuarioCtrl = require("./controllers/usuarios");
 // API routes
 var usuarios = express.Router();
 
-usuarios.get('/', function (req, res) {
+app.get('/', function (req, res) {
   res.send('Backend funcionando correctamente')
 })
 
